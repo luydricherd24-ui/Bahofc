@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Teste do Richerd</title>
+
+    <style>
+        /* ======== ESTILOS GERAIS ======== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(120deg, #141E30, #243B55);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            backdrop-filter: blur(5px);
+        }
+
+        main {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background: #00c3ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0078ff;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: auto;
+            width: 100%;
+            background: rgba(255,255,255,0.1);
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        🚀 SITE TESTE DO RICHERD
+    </header>
+
+    <main>
+        <h1>Bem-vindo ao meu site!</h1><p>Feito no VS Code com HTML, CSS e JavaScript 🔥</p>
+        <button onclick="mostrarMensagem()">Clique em mim!</button>
+
+        <h3 id="mensagem"></h3>
+    </main>
+
+    <footer>
+        © 2025 - Criado por Richerd 💻
+    </footer>
+
+    <script>
+        // ======== JAVASCRIPT ========
+        function mostrarMensagem() {
+            const mensagem = document.getElementById("mensagem");
+            mensagem.textContent = "Você clicou! Tá funcionando direitinho 😎";
+        }
+    </script>
+</body>
+</html>
